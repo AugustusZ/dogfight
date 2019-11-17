@@ -10,7 +10,7 @@ export default () => (
       }
 
       body {
-        background: salmon;
+        background: rgb(0, 36, 81);
       }
     `}
   </style>

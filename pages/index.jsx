@@ -2,26 +2,30 @@ import React from 'react';
 import Head from 'next/head';
 
 import GlobalStyle from '../components/GlobalStyle';
-import BattleGround from '../components/BattleGround';
+import GameBoard from '../components/GameBoard';
 
 const Home = () => (
   <div>
     <Head>
-      <title>Air Fight!</title>
+      <title>Dogfight</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <div className="hero">
-      <h1 className="title">Welcome to Air Fight!</h1>
+      <h1 className="title">Dogfight</h1>
     </div>
     <main>
-      <BattleGround size={9} />
+      <GameBoard />
     </main>
     <style jsx>{`
       .hero {
         font-family: 'Lexy';
         width: 100%;
-        color: #333;
+        color: rgb(236, 149, 160);
+      }
+
+      h1 {
+        text-transform: uppercase;
       }
 
       .title {
