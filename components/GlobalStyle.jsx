@@ -11,6 +11,8 @@ export default () => (
 
       body {
         background: rgb(0, 36, 81);
+        font-family: 'Lexy';
+        text-transform: uppercase;
       }
     `}
   </style>

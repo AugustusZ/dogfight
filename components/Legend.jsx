@@ -1,9 +1,8 @@
 import React from 'react';
-import BattleSpot from './BattleSpot';
 import {
   MAPPING_INJURY_CODE_TO_EMOJI,
   MAPPING_INJURY_CODE_TO_NAME
-} from './constants';
+} from '../utils/constants';
 
 const Legend = () => {
   return (

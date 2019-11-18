@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { MAPPING_INJURY_CODE_TO_EMOJI } from './constants';
+import { MAPPING_INJURY_CODE_TO_EMOJI } from '../utils/constants';
+
 /**
  * `code`:
  *
@@ -10,9 +11,14 @@ import { MAPPING_INJURY_CODE_TO_EMOJI } from './constants';
  * - `1`: ❗️ Minor injury
  * - `0`: ❌ No injury
  */
-const BattleSpot = ({ code, onClick }) => (
-  <button className="battle-spot" onClick={onClick}>
-    <style jsx>{`
+const BattleSpot = ({ index, code, onClick }) => {
+  const onButtonClick = () => {
+    onClick(index);
+  };
+
+  return (
+    <button className="battle-spot" onClick={onButtonClick}>
+      <style jsx>{`
       .battle-spot {
         padding: 0;
         padding-bottom: 100%;
@@ -43,6 +49,8 @@ const BattleSpot = ({ code, onClick }) => (
         box-shadow: inset 0 0 0 2px salmon;
       }
     `}</style>
-  </button>
-);
+    </button>
+  );
+};
+
 export default BattleSpot;

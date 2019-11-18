@@ -24,10 +24,6 @@ const Home = () => (
         color: rgb(236, 149, 160);
       }
 
-      h1 {
-        text-transform: uppercase;
-      }
-
       .title {
         margin: 0;
         width: 100%;
